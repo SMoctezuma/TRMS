@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRMS</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <a class="navbar-brand" href="/project1/static/">TRMS</a>
+            <!-- Links -->
+            <ul class="navbar-nav nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/acceptedrequests.html">Accepted Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/rejectedrequests.html">Rejected Requests</a>
+                </li>
+                <li class="nav-item" id="admin">
+                    <a class="nav-link" href="/project1/static/needsconfirmation.html">Needs confirmation</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li> -->
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown user-nav-right">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Username
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/project1/static/profile.html">Profile</a>
+                        <a class="dropdown-item" onclick="handleLogout()">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h1>Profile</h1>
+                        <div id="data" class="login-f">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script>
+            getUpdateUser();
+        </script>
+    </body>
+</html>

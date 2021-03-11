@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRMS</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <a class="navbar-brand" href="/project1/static/">TRMS</a>
+            <!-- Links -->
+            <ul class="navbar-nav nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/acceptedrequests.html">Accepted Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-active" href="#">Rejected Requests</a>
+                </li>
+                <li class="nav-item" id="admin">
+                    <a class="nav-link" href="/project1/static/needsconfirmation.html">Needs confirmation</a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li> -->
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown user-nav-right">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Username
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/project1/static/profile.html">Profile</a>
+                        <a class="dropdown-item" onclick="handleLogout()">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="row section-bg">
+                <div class="container">
+                    <div class="col-lg-12">
+                        <div class="pending-header">
+                            <h2 id="section-header">Rejected Requests</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="list" class="container">
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <script src="js/main.js"></script>
+        <script src="js/dashboard.js"></script>
+        <script>getRejectedRequests();</script>
+    </body>
+</html>

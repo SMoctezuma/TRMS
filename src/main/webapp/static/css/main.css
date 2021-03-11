@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(51, 64, 77);
+    overflow-x: hidden;
+}
+.nav-menu {
+    width: 100%;
+}
+.bg-dark {
+    background-color: rgb(31, 41, 51) !important;
+}
+.user-nav-right {
+    margin-left: auto;
+}
+
+.nav-active {
+    border-bottom: 1px solid rgb(229, 231, 235);;
+}
+
+.section-bg {
+    background-color: rgb(63, 77, 90);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.pending-header {
+    height: 3rem;
+    display: flex;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(154, 165, 177);
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: auto 0;
+    color: rgb(229, 231, 235);
+}
+
+.flex {
+    display: flex;
+}
+
+.margin-auto {
+    margin: auto auto;
+}
+
+button {
+    border: 1px solid rgb(5, 80, 179);
+    background-color: rgb(9, 103, 211);
+    color: rgb(229, 231, 235);
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: rgb(5, 80, 179);
+}
+
+.login-f {
+    background-color: rgb(63, 77, 90);
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.text-input {
+    background-color: rgb(81, 95, 108);
+    border: 1px solid rgb(123, 135, 147);
+    border-radius: 4px;
+    transition: border 0.5s ease;
+    width: 100%;
+}
+
+.text-input:hover {
+    border: 1px solid rgb(73, 164, 243);
+}
+
+label {
+    color: rgb(202, 209, 216);
+    font-size: .8rem;
+}
+
+#error, #error-g {
+    color: red;
+    margin: 0px;
+    display: none;
+}
+
+.but {
+    border: 1px solid rgb(5, 80, 179);
+    background-color: rgb(9, 103, 211);
+    color: rgb(229, 231, 235);
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease;
+    font-weight: 700;
+}
+
+.but:hover {
+    background-color: rgb(5, 80, 179);
+    text-decoration: none;
+    color: rgb(229, 231, 235); 
+}
+
+.red {
+    background-color: red;
+    border: red;
+    transition: background-color 0.5s ease;
+}
+
+.red:hover {
+    background-color: rgb(168, 8, 8);
+}
+
+.yellow {
+    border: yellowgreen;
+    background-color: yellowgreen;
+    transition: background-color 0.5s ease;
+}
+.yellow:hover {
+    background-color: rgb(4, 177, 27);
+}
+
+.dropdown-item {
+    cursor: pointer !important;
+}
+
+.account-brief {
+    display: inline-block;
+    color: white;
+    margin: auto;
+}
+
+.list-format {
+    display: flex;
+    justify-content: space-around;
+    min-height: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: transform 0.2s ease 0s;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.list-format:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+p {
+    color: white;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#gDiv {
+    display: none;
+}

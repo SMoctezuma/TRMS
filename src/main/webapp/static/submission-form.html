@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TRMS</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <a class="navbar-brand" href="/project1/static/">TRMS</a>
+            <!-- Links -->
+            <ul class="navbar-nav nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/acceptedrequests.html">Accepted Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/project1/static/rejectedrequests.html">Rejected Requests</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li> -->
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown user-nav-right">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        Username
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/project1/static/profile.html">Profile</a>
+                        <a class="dropdown-item" onclick="handleLogout()">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <div class="container py-4">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h1>Form</h1>
+                        <div class="login-f" style="display: flex; justify-content: space-between;">
+                            <div class="col-sm-3">
+                                <label for="eventType">Select an event type:</label>
+                                <select id="eventType">
+                                    <option value="1">University Courses: 30%</option>
+                                    <option value="2">Seminars: 60%</option>
+                                    <option value="3">Certification Preparation Classes: 75%</option>
+                                    <option value="4">Certification: 100%</option>
+                                    <option value="5">Technical Training: 90%</option>
+                                    <option value="6">Other: 30%</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3">
+                                <label style="display: block" for="DOE">Date of Event</label>
+                                <input class="text-input" type="text" id="DOE" />
+                                <label style="display: block" for="time">Time</label>
+                                <input class="text-input" type="text" id="time" />
+                                <label style="display: block" for="location">Location of Event</label>
+                                <input class="text-input" type="text" id="location" />
+                                <label style="display: block" for="eventDesc">Event Description</label>
+                                <input class="text-input" type="text" id="eventDesc" />
+                                <label style="display: block" for="COE">Cost of Event</label>
+                                <input class="text-input" type="text" id="COE" />
+                            </div>
+                            <div class="col-sm-3">
+                                <label style="display: block" for="gradingFormat">Grading Format</label>
+                                <input class="text-input" type="text" id="gradingFormat" />
+                                <label style="display: block" for="wrr">Work Related Reason</label>
+                                <input class="text-input" type="text" id="wrr" />
+                                <label style="display: block" for="emailApproval">Email Approval (optional)</label>
+                                <input class="text-input" type="text" id="emailApproval" />
+                            </div>
+                        </div>
+                        <button class="margin-auto mt-4" onclick="submitForm()">submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+        <script src="js/dashboard.js"></script>
+    </body>
+</html>

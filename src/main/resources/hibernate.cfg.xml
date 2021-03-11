@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- set up connection info -->
+		<property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+		<property name="hibernate.connection.url">jdbc:postgresql://revature.cixhz8c73bua.us-east-2.rds.amazonaws.com:5432/postgres?currentSchema="project1"</property>
+		<property name="hibernate.connection.username">postgres</property>
+		<property name="hibernate.connection.password">!Fuzzy1996</property>
+		
+		<!-- hibernate setup -->
+		<property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+		<!-- tell hibernate where to find our mappings -->
+		<mapping class="com.revature.beans.Account"></mapping>
+		<mapping class="com.revature.beans.Approval"></mapping>
+		<mapping class="com.revature.beans.Event"></mapping>
+		<mapping class="com.revature.beans.GradingFormat"></mapping>
+		<mapping class="com.revature.beans.ReinbursementForm"></mapping>
+		<mapping class="com.revature.beans.Role"></mapping>
+		<mapping class="com.revature.beans.Status"></mapping>
+	</session-factory>
+</hibernate-configuration>
