@@ -38,4 +38,4 @@ To-do list:
 
 ## License
 
-This project uses the following license: [<GNU General Public License v3.0>](<https://github.com/SMoctezuma/TRMS/blob/main/LICENSE>).
+This project uses the following license: [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0).
