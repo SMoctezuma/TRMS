@@ -34,3 +34,8 @@ To-do list:
 
 > You should then be able to log in using "supervisor@gmail.com" and "test" as password.
 ![TRMS - Google Chrome 3_17_2021 8_39_09 PM](https://user-images.githubusercontent.com/3750077/111560659-f0b5f980-8760-11eb-9f0e-0b909b2bcb5e.png)
+
+
+## License
+
+This project uses the following license: [<GNU General Public License v3.0>](<https://github.com/SMoctezuma/TRMS/blob/main/LICENSE>).
